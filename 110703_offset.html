@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+        .col-md-1, .col-md-8, .col-md-4, .col-md-6, .col-md-5, .col-md-7{
+            border: 1px solid red;
+            }
+        .row{
+            margin-bottom:4px;
+            margin-top:4px;
+        }
+        .pad10{
+            padding: 10px;
+            background-color: aqua;
+        }
+        </style>
+</head>
+<body>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>  
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <div class="container">
+        <!-- 중첩 : 중첩하려면, 존재하는 .col-md-* 컬럼 내에 새로운 .row 와 .col-md-* 컬럼 세트를 추가-->
+        <div class="row">
+            <div class="col-md-8">col-md-8
+                <div class="row">
+                    <div class="col-md-4 pad10" >12개 중에 4개에 그리드</div>
+                    <div class="col-md-8 pad10">12개 중에 8개에 그리드</div>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="col-md-4">col-md-4
+                <div class="row">
+                    <div class="col-md-6 pad10">12개 중에 6개에 그리드</div>
+                    <div class="col-md-6 pad10">12개 중에 6개에 그리드</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    
+
+    <!-- Gride offset -->
+    <!-- offset 앞에 공간을 빈공간으로 두겠다 -->
+    <!-- pad는 padding 과 같이 안쪽에 여백을 준거 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 pad10">col-md-5</div>
+            <div class="col-md-5 col-md-offset-2 pad10">col-md-5</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pad10">col-md-4</div>
+            <div class="col-md-7 col-md-offset-1 pad10">col-md-7</div>
+        </div>
+    </div>
+</body>
+</html>
