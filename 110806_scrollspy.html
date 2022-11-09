@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- /* 스크롤스파이를 이용할 때 기준점이 필요해서 꼭 포지션 사용해야한다. */ -->
+<style>
+    body{
+        padding-top: 70px;
+        position: relative;
+    }
+    .scrollcontent h4{
+        padding-top: 70px;
+    }
+</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+    <div class="container">  <!--  class="container" -> width:1170 --><!-- class="container-fluid"--> 
+        <!-- navigation바는 주 메류로 이용된다. 브라우저 크기르 작게 하면 "navbar-header"=>햄버거 버튼이 보인다.   -->
+        <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+            <!-- navbar-fixed-top를 nav태그에 추가하면 화면에 스크롤을 내려도 고정이된다. -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">로고</a>
+            </div>
+            <!--메뉴 클릭시 그 해당 메뉴로 이동한다. -->
+            <div class="collapse navbar-collapse  navbar-left navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#menu1">서브메뉴</a></li>
+                    <li><a href="#menu2">서브메뉴</a></li>
+                    <li><a href="#menu3">서브메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="scrollcontent">
+        <h1>스크롤 스파이</h1>
+        <h4 id="menu1">메뉴1</h4>
+        <p>Millions of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability tons of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, ns of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an averagea Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an average pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an average of two dozen or so seats in the midterms, which fall midway through a president's four years in office.
+            While Mr Bidenmself is not up for re-election on Tuesday, midterms are often seen as a referendum on a president's leadership
+            Despite delivering on promises to lower prescription drug prices, expand clean energy and revamp US infrastructure, Mr Biden has seen his popularity suffer following the worst inflation in four decades, record illegal crossings at the US-Mexico border, and voter concerns about crime
+            The vote looms - so who will win Congress? He went to Maryland on Monday night to campaign for Wes Moore, who is expected to make history as the third black governor ever elected in the US.</p>
+        <h4 id="menu2">메뉴2</h4>
+        <p>Millions of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democns of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an averagens of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an averagerat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an average of two dozen or so seats in the midterms, which fall midway through a president's four years in office.
+            While Mr Bidenmself is not up for re-election on Tuesday, midterms are often seen as a referendum on a president's leadership
+            Despite delivering on promises to lower prescription drug prices, expand clean energy and revamp US infrastructure, Mr Biden has seen his popularity suffer following the worst inflation in four decades, record illegal crossings at the US-Mexico border, and voter concerns about crime
+            The vote looms - so who will win Congress? He went to Maryland on Monday night to campaign for Wes Moore, who is expected to make history as the third black governor ever elected in the US.</p>
+        <h4 id="menu3">메뉴3</h4>
+        <p>Millions of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democratns of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an averagens of Americans will vote in the midterm elections on Tuesday, with the balance of power in Congress at stake
+            The entire US House of Representatives, about a third of the Senate and key state governorships are up for grabs.
+            President Joe Biden, a Democrat, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an average, and ex-President Donald Trump, a Republican, made their closing arguments in duelling rallies.
+            Mr Biden's ability to pass laws will be stymied if Republicans take the House, as most projections expect.
+            Democrats currently control the White House and - by razor-thin margins - both chambers of Congress.
+            The party in power typically sheds an average of two dozen or so seats in the midterms, which fall midway through a president's four years in office.
+            While Mr Bidenmself is not up for re-election on Tuesday, midterms are often seen as a referendum on a president's leadership
+            Despite delivering on promises to lower prescription drug prices, expand clean energy and revamp US infrastructure, Mr Biden has seen his popularity suffer following the worst inflation in four decades, record illegal crossings at the US-Mexico border, and voter concerns about crime
+            The vote looms - so who will win Congress? He went to Maryland on Monday night to campaign for Wes Moore, who is expected to make history as the third black governor ever elected in the US.</p>
+    </div>   
+</div>                          
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

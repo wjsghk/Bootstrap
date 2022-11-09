@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+        <div class = "container">                              
+           <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-align-left"></span>
+           </button> 
+           <button type="button" class="btn btn-default">
+            <span class=" glyphicon glyphicon-camera"></span>
+           </button> 
+           <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-trash"></span>
+           </button> 
+           <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-music"></span>
+           </button> 
+           <hr>
+           <span class="glyphicon glyphicon-phone-alt">02-123-1234</span>
+
+           <hr>
+
+           <!-- 드롭다운 메뉴 -->
+           <div class="dropdown">
+            <a data-toggle="dropdown" href="#">여기를 클릭</a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a tabindex="-1" href="#">메뉴1</a> </li>
+                <li><a tabindex="-1" href="#">메뉴2</a> </li>
+                <li><a tabindex="-1" href="#">메뉴3</a> </li>
+                <li class="divider"></li>   
+                <li><a tabindex="-1" href="#">분리된 메뉴</a></li>   
+                <!-- tabindex값에 -1을쓰는이유는 선택창에서tab키를 쓸수없게하기위해서이다. -->
+            </ul>
+           </div>
+
+
+           <!-- 드롭다운 메뉴 pull-right 메뉴가 오른쪽으로 이동 ,disabled => 메뉴 비활성화 -->
+           <div class="dropdown">
+            <a data-toggle="dropdown" href="#">여기를 클릭</a>
+            <ul class="dropdown-menu pull-right" role="menu">
+                <li><a tabindex="-1" href="#">메뉴1</a> </li>
+                <li class="disabled"><a tabindex="-1" href="#">메뉴2</a> </li>
+                <li><a tabindex="-1" href="#">메뉴3</a> </li>
+                <li class="divider"></li>   
+                <li><a tabindex="-1" href="#">분리된 메뉴</a> </li>   
+            
+            </ul>
+           </div>
+
+           <!-- 버튼형식으로 드롭다운 class="btn btn-default btn-primary" -->
+           <p>버튼형식의 드롭다운</p>
+           <div class="dropdown">
+            <a data-toggle="dropdown" class="btn btn-default btn-primary">여기를 클릭</a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a tabindex="-1" href="#">메뉴1</a> </li>
+                <li class="disabled"><a tabindex="-1" href="#">메뉴2</a> </li>
+                <li><a tabindex="-1" href="#">메뉴3</a> </li>
+                <li class="divider"></li>   
+                <li><a tabindex="-1" href="#">분리된 메뉴</a> </li>   
+            
+            </ul>
+           </div>   
+
+           <BR><BR>
+            <h2>일반적인 버튼</h2>
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <button type="button" class="btn btn-default">버튼3</button>
+            <button type="button" class="btn btn-default">버튼4</button>
+            
+            <!-- 버튼그룹  일반적인 버튼과 차이점은 버튼 사이가 붙어있다.-->
+            <br><br>
+            <h2>그룹 버튼1</h2>
+            <div class="btn-group">
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <button type="button" class="btn btn-default">버튼3</button>
+            <button type="button" class="btn btn-default">버튼4</button>
+            </div>
+
+            <!-- 버튼그룹 크기 변경 class="btn-group btn-group-sm"  sm ,lg -->
+            <br><br>
+            <h2>그룹 버튼2</h2>
+            <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <button type="button" class="btn btn-default">버튼3</button>
+            <button type="button" class="btn btn-default">버튼4</button>
+            </div>
+
+            <!-- 버튼의중첩     , class="caret" =>  선택창에 화살표 표시가 나타남 -->
+            <br><br>
+            <p>버튼의 의중첩p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">버튼1</button>
+                <button type="button" class="btn btn-default">버튼2</button>
+                <div class="btn-group">
+                    <button type="button" data-toggle="dropdown" class="btn btn-default">클릭<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">메뉴1</a></li>
+                        <li><a tabindex="-1" href="#">메뉴1</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- 버튼의 워칙은 가로방향, 버튼수직정렬 <= class="btn-group-vertical" -->
+            <br><br>
+            <p>버튼의 수직정렬</p>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-default">버튼1</button>
+                <button type="button" class="btn btn-default">버튼2</button>
+                <div class="btn-group">
+                    <button type="button" data-toggle="dropdown" class="btn btn-default">클릭<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">메뉴1</a></li>
+                        <li><a tabindex="-1" href="#">메뉴1</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- 드롭업과 드롭다운 비교 -->
+            <br><br>
+            <p>드롭업</p>
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-default">버튼1</button>
+                <button type="button" class="btn btn-default">버튼2</button>
+                <div class="btn-group">
+                    <button type="button" data-toggle="dropdown" class="btn btn-default">클릭<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">메뉴1</a></li>
+                        <li><a tabindex="-1" href="#">메뉴1</a></li> 
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 입력그룹  span class="input-group-addon"   -->
+            <br><br>
+            <p>입력그룹</p>
+            <div class="input-group">
+                <span class="input-group-addon"><sapn class="glyphicon glyphicon-user"></sapn></span>
+                <input type="text" class="form-control" placeholder="아이디">
+            </div>
+            <br><br>
+            <div class="input-group">
+                <span class="input-group-addon">금액</span>
+                <input type="text" class="form-control" placeholder="금액">
+                <span class="input-group-addon">원</span>
+            </div>
+
+
+
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
