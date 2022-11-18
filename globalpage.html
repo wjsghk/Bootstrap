@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+        /* <!-- 메뉴 컨테이너 화면조정--> */
+        .navbar{ background-color: #fff; border: none; padding-bottom: 10px;  font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 18px;height: 90px; text-transform: capitalize; border-bottom: 1px solid #AAAAAA}
+        /* <!--햄버거위치 조정--> */
+        .navbar-toggle {position: relative;margin-top: 40px;top: 2px;}
+        .navbar-nav { padding-right: 10px;margin-top: 20px; background-color: #fff}
+        .navbar-nav li { margin:0 20px; }
+        /* 캐러셀을 조정하는 스타일 */
+        a:hover{text-decoration: none;}
+        body{padding-top: 90px;}
+        .container-fluid{padding: 0px;}
+        /* 로고 처리부분 */
+        .navbar-brand{padding-left: 20px;}
+        /* 마우스 호버설정  메인메뉴부분 */
+        .navbar-default .navbar-nav>li>a:hover {color: orange;}
+        /* 그룹선택부분 */
+        .navbar-default .navbar-nav>li.active>a,
+        .navbar-default .navbar-nav>li.active>a:hover,
+        .navbar-default .navbar-nav>li.active>a:focus
+        { color: #FF8000; background-color: #fff} 
+        /* 화살표 부분 */
+        .control{
+            position: inherit;
+            top: 50%;
+            display: inline-block;
+        }
+       
+        @media (max-width: 320px)  {
+        .navbar-brand img { width: 80%; height: 0; margin-top:-150px}  
+        }
+        @media (max-width: 980px) {
+            .navbar-nav li { margin:0 10px;}
+        }
+        /* 아이콘 부분 */
+        .service{
+        margin: 0px 0;
+        }
+        .service a{
+            display: block;
+        }
+        .icons{
+            float: center;        ;
+            display: block;
+            font-size: 30px;
+            color: rgb(10, 10, 10);
+            background-color: #f5f3f0;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 0px;
+            padding: 30px;
+            border: 2px solid rgb(7, 6, 6);
+            transition: all 0.3s;
+        }
+        .service a:hover .icons{
+            background-color: rgb(243, 218, 165);
+        }
+        .service a:hover .icontext h4{
+        color:#0080ff;
+        }
+        
+        @media (min-width: 768px) {
+        .icons { margin: 0 auto; position: relative; left: 0%;}
+        .icontxt h4 { text-align: center;}
+        }
+
+        @media (max-width: 360px) {
+        .icontxt p { display: none; }
+        .icontxt {line-height:10px; padding: 0; margin: 0;}
+        .icontxt h4 { display: none; }
+        .icons { padding: 20px; margin: 10px 0 10px 0px; }
+        .control { display: none;} 
+        }
+
+        #home{  
+            width: 1150px;
+            height: 500px;
+        }
+        h1{
+            margin: 150px 0 20px 0;
+            text-align: center;    
+        }
+        .carousel-inner img {
+            size: 100px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>  
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top" id="navbar-scroll">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle nav</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="images/step1.jpg"></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#about">교육과목목록</a></li>
+                            <li><a href="#지도">오시는길</a></li>
+                            <li><a href="#문의게시판">문의게시판</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+       
+        <div id="carousel-generic" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-generic" data-slide-to="1" ></li>
+                <li data-target="#carousel-generic" data-slide-to="2" ></li>
+                <li data-target="#carousel-generic" data-slide-to="3" ></li>
+                <li data-target="#carousel-generic" data-slide-to="4" ></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/com.jpeg " alt="First-slide">
+                </div>
+                <div class="item">
+                    <img src="images/comm.jpeg " alt="First-slide">
+                </div>
+                <div class="item">
+                    <img src="images/t1.jpg " alt="First-slide">
+                </div>
+                <div class="item">
+                    <img src="images/t2.jpg " alt="First-slide">
+                </div>
+                <div class="item">
+                    <img src="images/t3.jpg " alt="First-slide">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                <img src="images/l1.png" class="control">
+            </a>
+            <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                <img src="images/r2.png" class="control">
+            </a>
+        </div>
+           
+        <div id="about"></div>
+            <header class="content1">
+                <div class="container">
+                    <h1><small>tistististististististististististististististis</small></h1>
+                    <p>HTML5와 CSS3 그리고 jQuery 기반으로 한 최신의 웹사이트를 구축하며, 플래시를 전혀 사용하지 않고, 세련된 UI를 구현합니다.</p>
+                </div><!--about 끝 부분-->
+            </header>
+
+            <div class="container about">
+                        <p>
+                             두산그룹 웹사이트 기획/개발/유지보수, 두산계열사 웹마스터 교육 담당, 국제 유도 연맹 웹사이트 기획/개발, 두산그룹 두산타워 , 두산베어스, 오비맥주, 국제유도 연맹 웹사이트 기획/개발/유지보수 및 쌍용아파트 웹사이트 기획했으며, 2000년부터 온라인 이벤트 사이트 유텐드 웹사이트 기획/개발/마케팅 한국 본부장을 역임하였습니다. 2002년 부터는 게임 사이트인 라그하임 웹사이트 기획/개발하였으며, 2004년부터는 한우리 독서 운동 본부 사이트 리뉴얼, 면세점 할인 쿠폰 사이트기획 및 설계했습니다. 2005년에는 제주로 내려와 온라인 영어 평가 시스템 이모코디설계 개발 기획 총괄을 담당했으며, 또한 두바이 5성급 호텔인 아시아나 호텔, 경제전문 출판사 스마트북스 웹 사이트, DB 보안전문회사 ㈜신시웨이 웹 사이트, (사) 제주관광문화산업...
+                        </p>       
+            </div> <!--about out-->
+
+        <div class="container" id="교육">
+            <h1 >교육과목목록</h1>
+            <div class="row service" >
+                <div class="col-xs-6 col-md-4">
+                    <div class="row">
+                        <a href="#"><!--"span class=00 "00부분에 부트스트랩 사이트가서 아이콘 선택해서 넣기-->
+                            <div class="col-xs-4 col-md-12">
+                                <span class="glyphicon glyphicon-envelope icons"></span>
+                            </div>
+                            <div class="col-xs-4 col-md-12 icontxt">
+                            </div>
+                        </a>
+                    </div>
+                </div>   
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="row">
+                    <a href="#">
+                        <div class="col-xs-4 col-md-12">
+                            <span class="glyphicon glyphicon-user icons"></span>
+                        </div>
+                        <div class="col-xs-4 col-md-12 icontxt">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="row">
+                    <a href="#">
+                        <div class="col-xs-4 col-md-12">
+                            <span class="glyphicon glyphicon-user icons"></span>
+                        </div>
+                        <div class="col-xs-4 col-md-12 icontxt">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="row">
+                    <a href="#">
+                        <div class="col-xs-4 col-md-12">
+                            <span class="glyphicon glyphicon-user icons"></span>
+                        </div>
+                        <div class="col-xs-4 col-md-12 icontxt">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="row">
+                        <a href="#">
+                            <div class="col-xs-4 col-md-12">
+                                <span class="glyphicon glyphicon-search icons"></span>
+                            </div>
+                            <div class="col-xs-4 col-md-12 icontxt">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <div class="row">
+                        <a href="#">
+                            <div class="col-xs-4 col-md-12">
+                                <span class="glyphicon glyphicon-info-sign icons"></span>
+                            </div>
+                            <div class="col-xs-4 col-md-12 icontxt">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+
+            
+
+            
+
+            <h1 id="지도">오시는길</h1>
+            <div class="item active" >
+                <img src="images/h.png " id="home" alt="First-slide">
+            </div>
+    
+        <h1 class="text-primary">문의게시판</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>번 호</th>
+                <th>제 목</th>
+                <th>글쓴이</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트 </td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트 </td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트 </td>
+                <td>임꺽정</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트 </td>
+                <td>임꺽정</td>
+            </tr>
+            <tr  id="문의게시판">
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트 </td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+    </div> <!-- container-fluid end -->
+      
+  
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel()
+    </script>
+</body>
+</html>
